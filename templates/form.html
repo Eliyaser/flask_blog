@@ -1,0 +1,32 @@
+ {% extends 'base.html' %}
+
+
+{% block title %} Welcome to form{% endblock %}
+
+{% block content %}
+        
+     <form action="/conform" method="POST">
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Name</label>
+		    <input type="name" class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+		    
+		  </div>
+
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">age</label>
+		    <input type="number" name="age" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		  </div>
+
+		  <div class="form-group">
+		    <label for="exampleInputEmail2">city</label>
+		    <input type="name" class="form-control" name="city" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter Name">
+		    
+		  </div>
+
+		  
+
+
+		  <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+         
+{% endblock %}
